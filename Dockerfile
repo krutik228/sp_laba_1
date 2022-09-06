@@ -1,8 +1,8 @@
-FROM python:3.8
+FROM ubuntu:latest
 
 RUN mkdir -p /project/app/
 COPY . /project/app
 
 WORKDIR /project/app
 
-CMD ["python", "main.py"]
+CMD ["sh", "main.sh"]
